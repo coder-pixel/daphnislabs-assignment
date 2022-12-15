@@ -1,0 +1,99 @@
+.product{
+    width: 30%;
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+    padding-bottom: 0;
+    border: 2px solid gray;
+    border-radius: 10px;
+    overflow-x: hidden;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.product .productText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.productText .productTitle{
+    font-size: var(--text-font-size);
+    font-weight: bolder;
+}
+.productText .productPrice{
+    font-size: var(--heading-font-size);
+    font-weight: 800;
+    color: rgba(142, 5, 5);
+}
+.productText .productPrice span{
+    color: gray;
+    font-weight: 600;
+}
+.productText .productAddress h2, span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--text-font-size);
+    font-weight: 500;
+}
+.productText .productAddress span{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+.productText .divider{
+    background-color: gray;
+    width: 110%;
+    height: 1px;
+}
+
+
+.productText .contact{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--theme-color);
+    padding: 10px;
+}
+.contact > span{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* .productText .contact:hover{
+    background-color: var(--theme-color);
+    color: #fff;
+} */
+
+.contact .parentSpan{
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 5px;
+}
+.contact .childSpan{
+    width: 90%;
+    height: 2px;
+    background-color: var(--theme-color);
+    position: absolute;
+    bottom: 0px;
+    /* display: none; */
+    transform: translateX(-110%);
+    transition: 300ms;
+}
+
+.contact .parentSpan:hover .childSpan{
+    transform: translateX(0%);
+}
+
+.bottomBg{
+    display: block;
+    background-color: rgba(142, 5, 5);
+    width: 110%;
+    padding: 5px;
+    transform: translateX(-5%);
+}

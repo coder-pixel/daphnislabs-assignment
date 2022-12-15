@@ -1,0 +1,153 @@
+.homeContainer {
+    padding: 20px 10%;
+}
+
+.topContent{
+    /* background-color: aquamarine; */
+    width: 100%;
+}
+.topContent .breadcrums {
+    width: 100%;
+    font-weight: 500;
+    display: inline-block;
+    font-size: var(--text-font-size);
+    margin-bottom: 10px;
+}
+.topContent .breadcrums .current {
+    display: inline;
+    font-weight: bold;
+}
+
+.topContent .search {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.search span {
+    padding: 5px;
+    font-size: 18px;
+}
+.search input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+}
+.search input::placeholder {
+    color: #333;
+}
+.search button {
+    background-color: var(--theme-color);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+.search button:active {
+    color: var(--theme-color);
+    background-color: #fff;
+    border-color: var(--theme-color);
+}
+
+.titleDiv {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.titleDiv .title {
+    font-size: var(--heading-font-size);
+    color: #333;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.titleDiv .title .resultCount {
+    font-size: var(--text-font-size);
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tags .tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--theme-color);
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.tags .tag span {
+    font-size: 14px;
+    cursor: pointer;
+}
+.tags button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+
+
+
+
+.bottomContent {
+    display: flex;
+    gap: 20px;
+    /* position: relative; */
+}
+
+.left {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    /* background-color: aquamarine; */
+}
+
+.right {
+    flex: 4;
+    display: flex;
+    /* gap: 40px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    height: fit-content;
+}
+
+
+@media screen and (max-width: 980px) {
+    .left{
+        flex: 2;
+    }
+    .right{
+        flex: 3;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .homeContainer {
+        padding: 20px 5%;
+    }
+
+    .bottomContent{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left{
+        max-width: 80%;
+    }
+}
